@@ -1,0 +1,31 @@
+#create an image
+# A: you can use 
+#docker pull image:tag 
+docker pull alpine:latest 
+or use a file and use this command
+# docker build -t my-image .
+The . is to show the current directory you are working on
+to run container from image I used 
+# docker run -P -d imagename
+# to view images 
+docker images
+# run container from image using a dockerfile
+Mkdir abc
+cd abc
+touch Dockerfile
+nano Dockerfile or vim Dockerfile 
+# docker run --name my-container -P -d my-image
+--name gives it a name, -d means detached mode so it runs in background and -P gives it port#
+To see running containers
+# docker ps
+# docker logs -f [container id]
+f, --follow: Follow log output.
+--since: Show logs since timestamp (e.g., 2023-01-01T00:00:00).
+--until: Show logs until timestamp (e.g., 2023-01-02T00:00:00).
+--tail: Number of lines to show from the end of the logs
+# docker inspect to get the container IP
+To enter into the container environment and work on it use
+# docker exec -it [containerid] bash 
+To exit the container environment use 
+# eixt
+# docker stop container#
