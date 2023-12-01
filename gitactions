@@ -1,0 +1,26 @@
+   79  git init
+   80  git add .
+   81  git status
+   82  git commit -m "Docker images and container 1"
+   83  git status
+   84  git log
+   85  git push origin branch master
+   86  git pull origin master
+   87  git push origin branch master https://github.com/Depton-Consultants
+   88  git remote add origin https://github.com/Depton-Consultants/Docker-
+   89  git push origin master
+   90  git checkout -b dev
+   91  ls
+   92  touch readmefile
+   93  git add .
+   94  git status
+   95  it commit -m "building images and runing containers"
+   96  git commit -m "building images and runing containers"
+   97  git pull origin master
+   98  git checkout master
+   99  git merge dev
+  100  git checkout dev
+  101  git push origin dev
+  102  git checkout master
+  103  git push origin master
+  104  history
